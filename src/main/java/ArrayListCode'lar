@@ -1,0 +1,32 @@
+
+
+
+    1)add ; List'e data girmek icin kullanilan kod.
+
+    2)addAll(); method'u bir List'i diger List'in icine yerlestirir
+
+    3)size() : size methodu bir List'deki eleman sayisiniz verir.
+
+    4)get() : get methodu index kullanarak istedigimiz elamani almaya yarar.
+
+    5)set() : ArrayList'te specific bir elemanı degistirmek icin kullanilir
+
+    6)contains() : ArrayList'te specific bir elemanin var olp olmadigini anlamak icin kullanilir.
+
+    7)isEmpty() : Bir ArrayList'in bos olup olmadigini anlamak icin kullanilir.
+
+    8)clear() : Bir Arraylist'teki tum elemanlari silmek icin kullanilir.
+
+    9)remove() : ArrayList'te bir elemanin "ilk gorunumu"nü silmek icin kullanilir.
+               i)İster index ile ister String olarak silebiliriz.
+
+    10)removeAll() : ArrayList'te bir elemanin "tüm gorunumlerini" silmek icin kullanilir.
+
+    11)equals() : Iki ArrayList'in biribirine esit olup olmadigini anlamak icin kullanilir.
+                i)equals methodu ayni elemanlar ayni index'te oldugu surece true verir.
+
+    12)indexOf() :ilk gorunumunun index ' ini verir.
+
+    12)lastIndexOf() :son gorunumunun index'ini verir.
+
+    13)Collections.sort() : List'i kücükten buyuge siralar.

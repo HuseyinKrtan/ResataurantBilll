@@ -1,0 +1,100 @@
+
+           =========== String ==========
+stream()
+        list'i yukardan asagiya cevirir ve icinde birsuru lambda method'u vardir
+
+forEach()
+        list'i each loop'a koyar
+
+filter()
+        list'i filtreler
+
+Map()
+        list'de degisiklik yapar.
+
+distinct()
+        distinct()tekrarli elemanleri bir kere gosterir.
+
+sorted()
+        alfabetik siraya dizer
+
+sorted(Comparator.comparing(t->t.length()))
+        Comparator.comparing
+        siralama secimi
+       .thenComparing buda siralandıktan sonra bırde soyle yap demek icin
+
+removeIf()
+       Belirili bir kurala gore sil deriz ornegın uzunlugu 5 den buyuk olanari sil gibi
+
+collect(Collectore.toList())
+       Bir listin icine koymaya yarar yani List return eder.
+
+skip()
+       Atla demek Ornegın skip(2) ilk ikisini atla sonra yaz messela
+
+limit()
+       Sınır belirleme Ornegın limit(1) geriye kalanlarin bir tanesini yazdir
+
+Files.lines(Paths.get(*text adres*))
+       lines methoduna dosya yolunu yazmak için Paths classından get methodunu kullanmalıyız.
+       Files classındaki lines methodu datayı Stream olarak verir.
+       Bu sebeple stream'deki bütün methodları burada kullanabiliriz.
+
+flatMap()
+       flatMap(Arrays::stream) split ile kesip cogalttıgımız array karakterlerini
+                               bir array in içine toplamaya yarar
+                               flat fuvarlari yık demektir burada yikilan duvardan kasip array in parantezidir []
+
+
+
+
+       ========== İntegar ============
+reduce()
+       reduce(0,(t,u)->t+u); //reduce() => deger sayisini azaltmak.
+       Coklu datayi tekli dataya cevirmek istedigimizde bu method kullanilir
+       Buradaki 0 toplamad etksisz eleman olan 0 i temsil eder Çarpma isleminde 1 olmalidir
+
+get()
+       get() method'u Optional<Integar> i Integar 'a cevirir.
+
+allMatch() !!HEPSİ!!
+       tum elemanlar sarti saglarsa true dondurur
+
+noneMatch() !!HİCBİRİ!!
+       hic bir eleman sarti saglamazsa true dondurur
+
+anyMatch() !!BİRİSİ!!
+       bir yada birden daha fazla eleman sarti saglarsa true dondurur
+
+IntStream.rangeClosed(a,b)
+       Sayilari sirasiyla toplama çapma işlemlerini yapabilriiz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

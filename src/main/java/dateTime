@@ -1,0 +1,74 @@
+
+    LocalDate
+
+    1) now() : Icinde bulundugumuz zaman dilimindeki tarihi nasil aliriz
+
+    2)getMonthValue() : Tarih'den istedigimiz bileseni basil aliriz
+
+    3)getMonth() : Bulundugumuz tarihi aliriz.
+
+    4)getDayOfWeek() : Hangi gunde oldugumuzu buluruz.
+
+    5) Ileriki tarihe nasil gidilir?
+               plusDays , plusMonths , plusYears
+    ilerideki    gün         ay           yil
+
+    6)LocalDate.of() :Specific bir tarih objesi nasil olusturulur
+
+    7)isAfter() : Bir tarihin bir tarihten sonra olup olmafigi nasil kontrol edilir
+
+    8)isBefore() : Bir tarihin bir tarihten önce olup olmafigi nasil kontrol edilir?
+
+    9)isEqual() : Bir tarihin bir tarihe esit olup olmafigi nasil kontrol edilir
+
+    *******************  TİME  ********************
+
+    LocalTime
+
+    1)now() :Anlik zamani nasi aliriz
+
+    2)getHour() : Anlı saat nasil alinir
+
+    3)getMinute():          "
+
+    4)getSecond() :         "
+
+    5)getNano() :           "
+
+    6) plus gelecek (ekleme), minus gecmis (cıkarmak)
+
+    7)Zaman formati degistirme
+
+    DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("hh:mm:ss a")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
