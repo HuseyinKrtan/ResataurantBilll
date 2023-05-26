@@ -9,11 +9,11 @@ public class FoodMethods {
 
     public void addFoods() {
 
-        Foods kofte=new Foods(101,"kofte",85);
-        Foods sivasKebabi=new Foods(102,"sivasKebabi",110);
-        Foods etliEkmek=new Foods(103,"etliEkmek",75);
-        Foods cigerSis=new Foods(104,"cigerSis",100);
-        Foods cagKebabiSis=new Foods(105,"cagKebabiSis",70);
+        Foods kofte=new Foods(101,"kofte",85,0);
+        Foods sivasKebabi=new Foods(102,"sivasKebabi",110,0);
+        Foods etliEkmek=new Foods(103,"etliEkmek",75,0);
+        Foods cigerSis=new Foods(104,"cigerSis",100,0);
+        Foods cagKebabiSis=new Foods(105,"cagKebabiSis",70,0);
         foodsList.add(kofte);
         foodsList.add(sivasKebabi);
         foodsList.add(etliEkmek);
@@ -42,9 +42,9 @@ public class FoodMethods {
     public void addOrder(int secim, int howMany) {
         for (Foods each:foodsList) {
             if (each.getFoodscode()==secim){
-                Foods obj=new Foods(OrderBill.count,each.getFoodName(),each.getFoodPrice()*howMany);
+                Foods obj=new Foods(OrderBill.count,each.getFoodName(),each.getFoodPrice()*howMany,howMany);
                 OrderBill.orderBillList.add(obj);
-                System.out.println("Order CODE : "+obj.getFoodscode()+" "+howMany+" piece "+obj.getFoodName()+" price "+obj.getFoodPrice()+" $");
+                System.out.println("Order CODE : "+"("+obj.getFoodscode()+")"+" "+howMany+" piece "+obj.getFoodName()+" price "+obj.getFoodPrice()+" $");
                 OrderBill.count++;
             }
         }

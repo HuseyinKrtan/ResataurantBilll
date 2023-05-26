@@ -2,14 +2,14 @@ package siparisFisiOlusturma;
 
 public class RestaurantBillGenerator {
     public static void main(String[] args) {
-
+        FoodMethods obj = new FoodMethods();
+        obj.addFoods();
         start();
 
     }
 
     public static void start() {
         FoodMethods obj = new FoodMethods();
-        obj.addFoods();
         System.out.println("================================================");
         System.out.println("===============  WELCOME  ======================");
         System.out.println("================================================");
@@ -25,7 +25,9 @@ public class RestaurantBillGenerator {
 
         switch (options){
             case 1:
+
                 obj.menu();
+                start();
                 break;
             case 2:
 //                System.out.println("siparis ekleme");
@@ -41,14 +43,18 @@ public class RestaurantBillGenerator {
                 break;
             case 3:
 //                System.out.println("siparis kodu girilerek siparis silinsin");
-                System.out.println("");
                 OrderBill orderBill=new OrderBill();
-
-//                orderBill.cancelOrder(cancelCode);
+                orderBill.showOrder();
+                System.out.println("Enter the food code you want to cancel");
+                int cancelCode=Input.input.nextInt();
+                orderBill.cancelOrder(cancelCode);
                 break;
             case 4:
-                System.out.println("tutarları ile birlikte tum siparişleri ve toplam tutarı gosteren bir" +
-                        "hesap fisi yazdırılsın");
+//                System.out.println("tutarları ile birlikte tum siparişleri ve toplam tutarı gosteren bir" +
+//                        "hesap fisi yazdırılsın");
+                OrderBill orderBill2=new OrderBill();
+                orderBill2.showOrderBill();
+
                 break;
             case 5:
                 System.exit(0);

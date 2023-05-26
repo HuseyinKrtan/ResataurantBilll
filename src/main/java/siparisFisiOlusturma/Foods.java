@@ -19,6 +19,22 @@ public class Foods {
 
     private int foodPrice;
 
+    private int howManyPiece;
+
+    public int getHowManyPiece() {
+        return howManyPiece;
+    }
+
+    public void setHowManyPiece(int howManyPiece) {
+        this.howManyPiece = howManyPiece;
+    }
+
+    public Foods(int foodscode, String foodName, int foodPrice, int howManyPiece) {
+        this.foodscode = foodscode;
+        this.foodName = foodName;
+        this.foodPrice = foodPrice;
+        this.howManyPiece = howManyPiece;
+    }
 
     public Foods(int foodscode, String foodName, int foodPrice) {
         this.foodscode = foodscode;
